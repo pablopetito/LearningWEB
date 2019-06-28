@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* { 
+    outline: none !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    position: relative;
+    z-index: 1000000;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.navbar {
+    background: brown !important;
+}
+
+.navbar .navbar-brand {
+    color: #f9f7f7;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.subBrand {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+   /*/ -webkit-text-stroke: 0.2px white;*/
+}
+.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link
+{
+    color: red;
+}
+
+.navbar-light .navbar-nav .active:hover {
+    color: red;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: red;
+}
+
+.navbar .nav-link:focus {
+    color: red;
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(Imagenes5.jpg);
+    background-size: 100%;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner:before,
+.sec2:before,
+.contact:before
+ {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000, transparent); 
+    pointer-events: none;
+}
+
+.banner:after,
+.sec2:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg, #000, transparent);
+    pointer-events: none;
+}
+
+.contact:after
+ {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(380deg, #000, transparent);
+    pointer-events: none;
+}
+
+.tituloHome { 
+    color:white;
+    text-align: center;
+}
+
+.buscador {
+    padding: 50px;
+}
+
+.height100p {
+    height: 100vh;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.contentBox {
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.contentBox h2 {
+    font-weight: 800;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    color:white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.letraPaises {
+    font: Arial;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.letraSubTitulo {
+    font: Arial;
+    font-size: 1.5rem;
+    font-weight: 300;
+  /*  -webkit-text-stroke: 0.2px white;*/
+}
+
+.sec1 {
+    padding: 60px 0;
+    background: white;
+}
+
+.headerText h2 {
+    font-size: 2.5rem;
+}
+
+.fondoCard {
+    background: lightgray;;
+    color: black;
+}
+
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    background: lightgray;
+    margin-top:30px;
+}
+
+.placeBox .imgBx {
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+}
+
+.placeBox .imgBx img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.placeBox .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.divCardInterno {
+    width: 100%;
+    height: 80px;
+    align-content: center;
+    margin: 5px;
+}
+
+.letraDetalle {
+    font-size: 0.8rem;
+}
+
+.sec2 {
+    position: relative;
+    background: black;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.blog {
+    position: relative;
+    padding: 60px 0;
+    background: lightgray;
+    color:black;
+}
+
+.blogpost {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    color: #000;
+}
+
+.blogpost .imgBx {
+    height: 400px;
+}
+
+.blogpost .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogpost .content 
+{
+    padding: 15px;
+}
+
+.blogpost .content h1 {
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btnD2 {
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+    background: url(Imagenes2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+.btnD3 {
+    float: center;
+}
+
+.contact form {
+    position: relative;
+    z-index: 1000;
+}
+
+.contact .form-control {
+    background: #fff;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,2);
+    height: 50px;
+    border-radius: 0;
+    color: #000;
+    font-size: 1.25rem;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid rgb(248, 6, 6);
+    box-shadow: none;
+}
+
+.contact .textarea 
+{
+    min-height: 100px;
+}
+
+.contact label {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+footer {
+    background: #000;
+    padding: 50px 0 0 ;
+}
+
+.sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.sci li a {
+    color: #777;
+    font-size: 1.5em;
+    transition: 0.5;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.cpryt {
+    margin: 20px;
+    text-align: center;
+    color: #777;
+}
+
+.cpryt a {
+    color: orange;
+ }
+
+ .nvoColor {
+     background: #777;
+ }
